@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 
 urlpatterns=[
-    path('', views.hello), #dominio principal
-    path('about/', views.about)
+    path('', views.index), #dominio principal
+    path('about/', views.about),
+    path('hello/<str:username>', views.hello) #(params) entre morelessthan es solo una variable no algo especifico
 ]
