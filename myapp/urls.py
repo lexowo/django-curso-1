@@ -7,4 +7,5 @@ urlpatterns=[
     path('hello/<str:username>', views.hello), #(params) entre morelessthan es solo una variable no algo especifico
     path('projects/', views.projects),
     path('tasks/', views.tasks),
+	path('create_task/', views.create_task),
 ]
